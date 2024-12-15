@@ -1,0 +1,133 @@
+.w-15{
+    width: 15%;
+}
+.h-300{
+    height: 300px;
+}
+.w-85{
+    width: 85%;
+}
+.hide-overflow{
+    overflow-y: auto;
+    height: 178px;
+}
+.fs-17{
+    font-size: 17px;
+}
+.sidebar .content.active{
+    background-color: #d4e2f8;
+    border-right: 4px solid rgb(22, 164, 211);
+    border-radius: 5px;
+
+}
+.timeline .active{
+     background-color: #d4e2f8;
+    border-left: 4px solid rgb(22, 164, 211);
+    border-radius: 5px;
+    
+}
+/* Container styling */
+.calendar-container {
+  max-width: 450px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fdfdff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.calendar-header {
+  text-align: start;
+  margin: 10px 0;
+  padding-left: 14px;
+  color: #444;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* Grid layout for calendar */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+/* Weekday headers */
+.calendar-day-name {
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+  padding: 5px 0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Day styling */
+.calendar-day {
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 0.9em;
+  color: #444;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.calendar-day:hover {
+  background-color: #e9f0ff;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Empty day boxes */
+.calendar-day.empty {
+  background-color: transparent;
+  border: none;
+}
+
+/* Highlight today's date */
+.calendar-day.today {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0056b3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; /* Optional for horizontal scrollbars */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #f0f2f5; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Inner shadow */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+  border-radius: 10px;
+  border: 2px solid #f0f2f5; /* Space around handle */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Pretty shadow */
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #007bff;
+
+  cursor: pointer;
+}
+
